@@ -1,0 +1,25 @@
+﻿* HunterCritter
+* Moving
+   * Move towards a randomly chosen bug in its detection range(within 2 cells of its location(5by5) each step
+   * If it detects a Bug, it randomly chooses a move that would put it closer to the Bug. (If there’s a Bug 2 cells north and 1 cell east from the HunterCritter, the HunterCritter will either move north or northeast by 1 cell). 
+   * If it doesn’t detect any bug, it moves around randomly like a regular Critter
+   * If there are obstacles between the bug and hunter, the hunter will give up on the bug, and move around randomly like a regular critter for one step.
+* Eating
+* Eats a Bug by removing the Bug from its cell and move onto the bug’s location.
+* Randomly choose an adjacent bug to eat.
+* Eat only adjacent bugs, but if no adjacent bugs, randomly move to a Bug within 2 cells away. 
+* After the hunter eats a bug, it will spawn a new hunter that has the bug’s color at an adjacent location. If there’s no available location, the hunter will change its own color to the bug’s color.
+* Special
+* After the hunter eats a bug, other bugs in the grid become terrified. In the step following the bug eating, all bugs in the grid will [be pushed 1 location away from the hunter/change color to black/change their direction so that they face away from the hunter/etc]
+
+
+1. 2 bugs of different colors that are each 1 cell away. The Hunter spawns another Hunter that was the Color of the Bug eaten in a random adjacent, available location. 
+2. 2 bugs that are each 2 cells north and 1 cell east. The Hunter spawns another Hunter that was the Color of the Bug eaten in a random adjacent, available location. 
+3. no bugs within 2 cells[a] so the Hunter moves in a random adjacent location.
+4. 1 bug that is 1 cell north, 1 bug that is 2 cells West. Hunter should eat the bug 1 cell north first.
+5. A bug right in front of the hunter, another 3 bugs in the grid that is outside of its detection range.[b]
+
+
+Lets each take a runner
+[a]I will do these 2
+[b]I'll do this one
