@@ -1,5 +1,7 @@
 package info.gridworld.critters;
 
-public class HunterCritter {
+import info.gridworld.actor.*;
+
+public class HunterCritter extends Critter{
 
 }
