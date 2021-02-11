@@ -1,20 +1,20 @@
 ﻿HunterCritter
 * Moving
-   * Move towards a randomly chosen bug in its detection range(within 2 cells of its location(5by5) each step
-   * If it detects a Bug, it randomly chooses a move that would put it closer to the Bug. (If there’s a Bug 2 cells north and 1 cell east from the HunterCritter, the HunterCritter will either move north or northeast by 1 cell). 
-   * If it doesn’t detect any bug, it moves around randomly like a regular Critter
-   * If there are obstacles between the bug and hunter, the hunter will give up on the bug, and move around randomly like a regular critter for one step.
+	* Move towards a randomly chosen bug in its detection range(within 2 cells of its location (5by5) each step
+	* If it detects a Bug, it randomly chooses a move that would put it closer to the Bug. (If there’s a Bug 2 cells north and 1 cell east from the HunterCritter, the HunterCritter will either move north or northeast by 1 cell). 
+	* If it doesn’t detect any bug, it moves around randomly like a regular Critter
+	* If there are obstacles between the bug and hunter, the hunter will give up on the bug, and move around randomly like a regular critter for one step.
 * Eating
-* Eats a Bug by removing the Bug from its cell and move onto the bug’s location.
-* Randomly choose an adjacent bug to eat.
-* Eat only adjacent bugs, but if no adjacent bugs, randomly move to a Bug within 2 cells away. 
+	* Eats a Bug by removing the Bug from its cell and move onto the bug’s location.
+	* Randomly choose an adjacent bug to eat.
+	* Eat only adjacent bugs, but if no adjacent bugs, randomly move to a Bug within 2 cells away. 
 * Special
-* After a hunter eats a bug, all other bugs in the grid will change their direction away from the hunter and then get moved one block away from the hunter, if there is no available location for the bugs, the bugs would just stay in their location. 
-* Bugs face away from the Hunter the opposite direction towards the Hunter’s Location. Set the new Bug’s direction by rounding this direction to the nearest multiple of 45 degrees. 
-* After the Bugs have been turned away, each Bug moves 1 cell forward. 
-* If the grid is unbounded, the hunter would scare the bugs within 10 cells of its location (21*21)
+	* After a hunter eats a bug, all other bugs in the grid will change their direction away from the hunter and then get moved one block away from the hunter, if there is no available location for the bugs, the bugs would just stay in their location. 
+	* Bugs face away from the Hunter the opposite direction towards the Hunter’s Location. Set the new Bug’s direction by rounding this direction to the nearest multiple of 45 degrees. 
+	* After the Bugs have been turned away, each Bug moves 1 cell forward. 
+	* If the grid is unbounded, the hunter would scare the bugs within 10 cells of its location (21*21)
 Testers:
-1. no bugs within 2 cells so the Hunter moves in a random adjacent location.
-2. 1 bug that is 1 cell north, 1 bug that is 2 cells West. Hunter should eat the bug 1 cell north first. Then, the Bug that.
-3. A ring of bugs surrounding the hunter within 3 cells of its location all get scared and move 1 cell away from the Hunter after the Hunter eats a Bug. 
-4. One bug next to the hunter gets eaten. Another bug facing a rock after it turned but cannot move. A 3rd bug faces the edge of the grid and also cannot move. When the hunter eats the first bug, the two bugs would get stuck and don’t move.
+	1. no bugs within 2 cells so the Hunter moves in a random adjacent location.
+	2. 1 bug that is 1 cell north, 1 bug that is 2 cells West. Hunter should eat the bug 1 cell north first. Then, the Bug that.
+	3. A ring of bugs surrounding the hunter within 3 cells of its location all get scared and move 1 cell away from the Hunter after the Hunter eats a Bug. 
+	4. One bug next to the hunter gets eaten. Another bug facing a rock after it turned but cannot move. A 3rd bug faces the edge of the grid and also cannot move. When the hunter eats the first bug, the two bugs would get stuck and don’t move.
