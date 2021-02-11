@@ -1,4 +1,4 @@
-package Tester3;
+package Tester1;
 
 import java.awt.Color;
 
@@ -6,7 +6,7 @@ import info.gridworld.actor.ActorWorld;
 import info.gridworld.critters.HunterCritter;
 import info.gridworld.grid.Location;
 
-public class HunterCritterTester3 {
+public class HunterCritterTester1 {
 
 	public static void main(String[] args) {
 		ActorWorld world = new ActorWorld();
