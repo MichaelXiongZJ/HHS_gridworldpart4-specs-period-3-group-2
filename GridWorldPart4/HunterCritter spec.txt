@@ -18,14 +18,3 @@
 3. no bugs within 2 cells[d] so the Hunter moves in a random adjacent location.
 4. 1 bug that is 1 cell north, 1 bug that is 2 cells West. Hunter should eat the bug 1 cell north first.[e]
 5. A bug right in front of the hunter, another 3 bugs in the grid that is outside of its detection range.[f]
-
-
-Lets each take a runner
-
-
-[a]let's remove this special one? or the spawn new hunter one
-[b]I would do one or the other of these (weird to do both probably)
-[c]This was a list of ideas - I would choose 1 that you guys like.
-[d]I will do these 2
-[e]I will do this one
-[f]I'll do this one
