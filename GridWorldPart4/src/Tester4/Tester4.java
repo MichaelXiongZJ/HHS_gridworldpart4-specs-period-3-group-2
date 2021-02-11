@@ -12,9 +12,14 @@ public class Tester4 {
 	        world.add(new Location(2, 2), new HunterCritter());
 	        world.add(new Location(2, 3), new Bug());
 	        
-	     	world.add(new Location(9, 9), new Bug());
-	        
-	        world.add(new Location(6, 2), new Bug());
+	        Bug cornerBug = new Bug();
+	     	world.add(new Location(9, 9), cornerBug);
+	     	cornerBug.setDirection(Location.EAST);
+	  
+	     	
+	        Bug rockBug = new Bug();
+	        world.add(new Location(6, 2), rockBug);
+	        rockBug.setDirection(Location.SOUTH);
 	        world.add(new Location(7, 2), new Rock());
 	        
 	        world.show();
